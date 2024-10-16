@@ -1,0 +1,52 @@
+[2024-10-16T09:53:36.564+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: exchange_rate_usd_kzt_dag.get_rate scheduled__2024-01-10T00:00:00+00:00 [queued]>
+[2024-10-16T09:53:36.584+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: exchange_rate_usd_kzt_dag.get_rate scheduled__2024-01-10T00:00:00+00:00 [queued]>
+[2024-10-16T09:53:36.585+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2024-10-16T09:53:36.586+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 1
+[2024-10-16T09:53:36.587+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2024-10-16T09:53:36.618+0000] {taskinstance.py:1304} INFO - Executing <Task(CurrencyScoopOperator): get_rate> on 2024-01-10 00:00:00+00:00
+[2024-10-16T09:53:36.629+0000] {standard_task_runner.py:55} INFO - Started process 7771 to run task
+[2024-10-16T09:53:36.637+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'exchange_rate_usd_kzt_dag', 'get_rate', 'scheduled__2024-01-10T00:00:00+00:00', '--job-id', '1371', '--raw', '--subdir', 'DAGS_FOLDER/exchange_rates/__init__.py', '--cfg-path', '/tmp/tmpxntow8u_']
+[2024-10-16T09:53:36.639+0000] {standard_task_runner.py:83} INFO - Job 1371: Subtask get_rate
+[2024-10-16T09:53:36.814+0000] {task_command.py:389} INFO - Running <TaskInstance: exchange_rate_usd_kzt_dag.get_rate scheduled__2024-01-10T00:00:00+00:00 [running]> on host 63ee4fa64e74
+[2024-10-16T09:53:36.981+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=exchange_rate_usd_kzt_dag
+AIRFLOW_CTX_TASK_ID=get_rate
+AIRFLOW_CTX_EXECUTION_DATE=2024-01-10T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-01-10T00:00:00+00:00
+[2024-10-16T09:53:36.986+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:205: AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2024-10-16T09:53:37.007+0000] {base.py:73} INFO - Using connection ID 'cur_scoop_conn_id' for task execution.
+[2024-10-16T09:53:39.887+0000] {taskinstance.py:1327} INFO - Marking task as SUCCESS. dag_id=exchange_rate_usd_kzt_dag, task_id=get_rate, execution_date=20240110T000000, start_date=20241016T095336, end_date=20241016T095339
+[2024-10-16T09:53:39.914+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2024-10-16T09:53:39.949+0000] {taskinstance.py:2582} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-10-16T10:03:38.182+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: exchange_rate_usd_kzt_dag.get_rate scheduled__2024-01-10T00:00:00+00:00 [queued]>
+[2024-10-16T10:03:38.202+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: exchange_rate_usd_kzt_dag.get_rate scheduled__2024-01-10T00:00:00+00:00 [queued]>
+[2024-10-16T10:03:38.203+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2024-10-16T10:03:38.204+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 1
+[2024-10-16T10:03:38.204+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2024-10-16T10:03:38.225+0000] {taskinstance.py:1304} INFO - Executing <Task(CurrencyScoopOperator): get_rate> on 2024-01-10 00:00:00+00:00
+[2024-10-16T10:03:38.232+0000] {standard_task_runner.py:55} INFO - Started process 10354 to run task
+[2024-10-16T10:03:38.239+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'exchange_rate_usd_kzt_dag', 'get_rate', 'scheduled__2024-01-10T00:00:00+00:00', '--job-id', '2106', '--raw', '--subdir', 'DAGS_FOLDER/exchange_rates/__init__.py', '--cfg-path', '/tmp/tmp2h2nhpgt']
+[2024-10-16T10:03:38.240+0000] {standard_task_runner.py:83} INFO - Job 2106: Subtask get_rate
+[2024-10-16T10:03:38.373+0000] {task_command.py:389} INFO - Running <TaskInstance: exchange_rate_usd_kzt_dag.get_rate scheduled__2024-01-10T00:00:00+00:00 [running]> on host 63ee4fa64e74
+[2024-10-16T10:03:38.521+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=exchange_rate_usd_kzt_dag
+AIRFLOW_CTX_TASK_ID=get_rate
+AIRFLOW_CTX_EXECUTION_DATE=2024-01-10T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-01-10T00:00:00+00:00
+[2024-10-16T10:03:38.523+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:205: AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2024-10-16T10:03:38.539+0000] {base.py:73} INFO - Using connection ID 'cur_scoop_conn_id' for task execution.
+[2024-10-16T10:03:39.477+0000] {taskinstance.py:1327} INFO - Marking task as SUCCESS. dag_id=exchange_rate_usd_kzt_dag, task_id=get_rate, execution_date=20240110T000000, start_date=20241016T100338, end_date=20241016T100339
+[2024-10-16T10:03:39.555+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2024-10-16T10:03:39.605+0000] {taskinstance.py:2582} INFO - 1 downstream tasks scheduled from follow-on schedule check

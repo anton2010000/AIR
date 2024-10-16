@@ -1,0 +1,76 @@
+[2024-10-16T09:56:24.122+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: exchange_rate_usd_kzt_dag.create_table_task scheduled__2024-07-16T00:00:00+00:00 [queued]>
+[2024-10-16T09:56:24.149+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: exchange_rate_usd_kzt_dag.create_table_task scheduled__2024-07-16T00:00:00+00:00 [queued]>
+[2024-10-16T09:56:24.150+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2024-10-16T09:56:24.151+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 1
+[2024-10-16T09:56:24.152+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2024-10-16T09:56:24.191+0000] {taskinstance.py:1304} INFO - Executing <Task(PostgresOperator): create_table_task> on 2024-07-16 00:00:00+00:00
+[2024-10-16T09:56:24.202+0000] {standard_task_runner.py:55} INFO - Started process 9085 to run task
+[2024-10-16T09:56:24.212+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'exchange_rate_usd_kzt_dag', 'create_table_task', 'scheduled__2024-07-16T00:00:00+00:00', '--job-id', '1883', '--raw', '--subdir', 'DAGS_FOLDER/exchange_rates/__init__.py', '--cfg-path', '/tmp/tmpryqlz0q8']
+[2024-10-16T09:56:24.215+0000] {standard_task_runner.py:83} INFO - Job 1883: Subtask create_table_task
+[2024-10-16T09:56:24.436+0000] {task_command.py:389} INFO - Running <TaskInstance: exchange_rate_usd_kzt_dag.create_table_task scheduled__2024-07-16T00:00:00+00:00 [running]> on host 63ee4fa64e74
+[2024-10-16T09:56:24.728+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=exchange_rate_usd_kzt_dag
+AIRFLOW_CTX_TASK_ID=create_table_task
+AIRFLOW_CTX_EXECUTION_DATE=2024-07-16T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-07-16T00:00:00+00:00
+[2024-10-16T09:56:24.737+0000] {sql.py:253} INFO - Executing: CREATE TABLE IF NOT EXISTS currency_exchange_rates (
+    base VARCHAR(3) NOT NULL,
+    currency VARCHAR(3) NOT NULL,
+    rate NUMERIC(12, 3) NOT NULL,
+    date DATE NOT NULL,
+    UNIQUE (base, currency, date)
+);
+[2024-10-16T09:56:24.769+0000] {base.py:73} INFO - Using connection ID 'postgres_default' for task execution.
+[2024-10-16T09:56:25.408+0000] {base.py:73} INFO - Using connection ID 'postgres_default' for task execution.
+[2024-10-16T09:56:25.430+0000] {sql.py:364} INFO - Running statement: CREATE TABLE IF NOT EXISTS currency_exchange_rates (
+    base VARCHAR(3) NOT NULL,
+    currency VARCHAR(3) NOT NULL,
+    rate NUMERIC(12, 3) NOT NULL,
+    date DATE NOT NULL,
+    UNIQUE (base, currency, date)
+);, parameters: None
+[2024-10-16T09:56:25.474+0000] {taskinstance.py:1327} INFO - Marking task as SUCCESS. dag_id=exchange_rate_usd_kzt_dag, task_id=create_table_task, execution_date=20240716T000000, start_date=20241016T095624, end_date=20241016T095625
+[2024-10-16T09:56:25.545+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2024-10-16T09:56:25.643+0000] {taskinstance.py:2582} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-10-16T10:06:24.569+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: exchange_rate_usd_kzt_dag.create_table_task scheduled__2024-07-16T00:00:00+00:00 [queued]>
+[2024-10-16T10:06:24.592+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: exchange_rate_usd_kzt_dag.create_table_task scheduled__2024-07-16T00:00:00+00:00 [queued]>
+[2024-10-16T10:06:24.593+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2024-10-16T10:06:24.593+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 1
+[2024-10-16T10:06:24.594+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2024-10-16T10:06:24.767+0000] {taskinstance.py:1304} INFO - Executing <Task(PostgresOperator): create_table_task> on 2024-07-16 00:00:00+00:00
+[2024-10-16T10:06:24.776+0000] {standard_task_runner.py:55} INFO - Started process 11665 to run task
+[2024-10-16T10:06:24.783+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'exchange_rate_usd_kzt_dag', 'create_table_task', 'scheduled__2024-07-16T00:00:00+00:00', '--job-id', '2618', '--raw', '--subdir', 'DAGS_FOLDER/exchange_rates/__init__.py', '--cfg-path', '/tmp/tmpg9ndxc_7']
+[2024-10-16T10:06:24.785+0000] {standard_task_runner.py:83} INFO - Job 2618: Subtask create_table_task
+[2024-10-16T10:06:24.950+0000] {task_command.py:389} INFO - Running <TaskInstance: exchange_rate_usd_kzt_dag.create_table_task scheduled__2024-07-16T00:00:00+00:00 [running]> on host 63ee4fa64e74
+[2024-10-16T10:06:25.121+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=exchange_rate_usd_kzt_dag
+AIRFLOW_CTX_TASK_ID=create_table_task
+AIRFLOW_CTX_EXECUTION_DATE=2024-07-16T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-07-16T00:00:00+00:00
+[2024-10-16T10:06:25.124+0000] {sql.py:253} INFO - Executing: CREATE TABLE IF NOT EXISTS currency_exchange_rates (
+    base VARCHAR(3) NOT NULL,
+    currency VARCHAR(3) NOT NULL,
+    rate NUMERIC(12, 3) NOT NULL,
+    date DATE NOT NULL,
+    UNIQUE (base, currency, date)
+);
+[2024-10-16T10:06:25.143+0000] {base.py:73} INFO - Using connection ID 'postgres_default' for task execution.
+[2024-10-16T10:06:25.628+0000] {base.py:73} INFO - Using connection ID 'postgres_default' for task execution.
+[2024-10-16T10:06:25.641+0000] {sql.py:364} INFO - Running statement: CREATE TABLE IF NOT EXISTS currency_exchange_rates (
+    base VARCHAR(3) NOT NULL,
+    currency VARCHAR(3) NOT NULL,
+    rate NUMERIC(12, 3) NOT NULL,
+    date DATE NOT NULL,
+    UNIQUE (base, currency, date)
+);, parameters: None
+[2024-10-16T10:06:25.664+0000] {taskinstance.py:1327} INFO - Marking task as SUCCESS. dag_id=exchange_rate_usd_kzt_dag, task_id=create_table_task, execution_date=20240716T000000, start_date=20241016T100624, end_date=20241016T100625
+[2024-10-16T10:06:26.206+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2024-10-16T10:06:26.280+0000] {taskinstance.py:2582} INFO - 1 downstream tasks scheduled from follow-on schedule check
